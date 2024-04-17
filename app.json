@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "aora-app",
+    "name": "Aora",
     "slug": "aora-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -11,6 +11,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "scheme": "aora-app",
     "assetBundlePatterns": [
       "**/*"
     ],
@@ -21,10 +22,31 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.dev_adeniji.aora"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "package": "com.dev_adeniji.aora"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "80bb1c2c-de78-4e79-8134-2b998d1ed2c0"
+      }
+    },
+    "owner": "dev_adeniji",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/80bb1c2c-de78-4e79-8134-2b998d1ed2c0"
     }
   }
 }
